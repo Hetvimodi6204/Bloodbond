@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const Donor = require('./Donor');
 
-// Fetch all donors or filter by blood group and location
 router.get('/search', async (req, res) => {
   const { bloodGroup, location } = req.query;
   const filters = {};
@@ -17,7 +16,6 @@ router.get('/search', async (req, res) => {
   }
 });
 
-// Fetch a specific donor by ID
 router.get('/:id', async (req, res) => {
   const { id } = req.params;
 

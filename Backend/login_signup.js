@@ -27,7 +27,7 @@ const UserSchema = new mongoose.Schema({
   password: { type: String, required: true },
 });
 
-const User = mongoose.model("User", UserSchema, "login"); // Collection name 'login'
+const User = mongoose.model("User", UserSchema, "login"); 
 
 app.post("/api/signup", async (req, res) => {
   const { name, email, password } = req.body;

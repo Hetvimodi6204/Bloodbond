@@ -11,7 +11,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Check if MONGO_URI is loaded properly
-console.log("Mongo URI:", process.env.MONGO_URI); // Ensure this is not undefined
+console.log("Mongo URI:", process.env.MONGO_URI); 
 
 // Middleware
 app.use(express.json());
